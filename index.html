@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa0711</title>
+    <style>
+        /* Resetando margens e paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilo geral do body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f44336; /* Fundo vermelho */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white; /* Cor do texto branco para contraste */
+        }
+
+        /* Estilo do menu (barra superior) */
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #d32f2f; /* Cor do menu em tom de vermelho mais escuro */
+            padding: 20px 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        /* Efeito de hover no menu */
+        .menu:hover {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo dos links do menu */
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 12px 25px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            background-color: #b71c1c; /* Cor dos botões em um tom de vermelho mais suave */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Efeitos ao passar o mouse sobre os links */
+        .menu a:hover {
+            background-color: #ff7043; /* Cor laranja suave ao passar o mouse */
+            box-shadow: 0 6px 15px rgba(255, 87, 34, 0.3);
+            transform: scale(1.1);
+        }
+
+        .menu a.button2:hover {
+            background-color: #c2185b; /* Cor de hover mais escura para o segundo botão */
+            box-shadow: 0 6px 15px rgba(194, 24, 91, 0.3);
+            transform: scale(1.1);
+        }
+
+        /* Estilo do link ativo (caso queira adicionar algum efeito ao link ativo) */
+        .menu a:active {
+            background-color: #d50000;
+        }
+
+        /* Responsividade - adapta o layout para telas menores */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu a {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+        }
+
+        /* Efeitos adicionais - animações */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animação de fade-in no body */
+        body {
+            animation: fadeIn 1s ease-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <header class="menu">
+            <a href="Funcionario.php" class="button">Funcionários</a>
+            <a href="Registro.php" class="button2">Registros</a>
+        </header>
+    </div>
+</body>
+</html>
